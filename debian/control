@@ -1,0 +1,26 @@
+Source: libnginx-mod-http-auth-spnego
+Section: httpd
+Priority: optional
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Uploaders: Jan Mojžíš <jan.mojzis@gmail.com>,
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-nginx,
+               libkrb5-dev,
+               nginx-abi-1.22.1-7,
+Standards-Version: 4.6.2
+Homepage: https://github.com/stnoonan/spnego-http-auth-nginx-module
+Vcs-Git: https://salsa.debian.org/nginx-team/libnginx-mod-http-auth-spnego.git
+Vcs-Browser: https://salsa.debian.org/nginx-team/libnginx-mod-http-auth-spnego
+Rules-Requires-Root: no
+
+Package: libnginx-mod-http-auth-spnego
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: nginx,
+Description: SPNEGO authentication module for Nginx
+ The nginx_http_auth_spnego module enables authentication using SPNEGO.
+ .
+ The module adds support for authentication via SPNEGO. It currently only
+ supports Kerberos authentication via GSSAPI.
