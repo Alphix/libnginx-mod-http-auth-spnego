@@ -1,5 +1,5 @@
 libnginx-mod-http-auth-spnego (1:1.1.1-1) UNRELEASED; urgency=medium
 
-  * Initial release. (Closes: XXXXXXX)
+  * Initial release. (Closes: 1032835)
 
  -- David Härdeman <david@hardeman.nu>  Sun, 12 Mar 2023 08:50:05 +0100
